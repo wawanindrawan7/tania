@@ -82,6 +82,9 @@ if (isset($_POST['login'])) {
                 </div>
 
             </div>
+            <div class="col-4">
+                <img src="LOGO_DIKES.png" alt="" width="100%">
+            </div>
 
         </div>
     </div>

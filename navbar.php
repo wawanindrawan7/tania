@@ -28,7 +28,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
-                                <li><a class="dropdown-item" href="login.php?hal=kunjungan">LAPORAN KUNJUNGAN</a></li>
+                                <li><a class="dropdown-item" href="kunjungan.php">LAPORAN KUNJUNGAN</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
