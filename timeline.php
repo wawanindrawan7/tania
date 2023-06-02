@@ -24,7 +24,125 @@
 
 
     <div class="container">
-        <h3>Selamat Datang, <?php echo  $_SESSION["user"]["name"] ?></h3>
+        <h3 class="mt-3">Selamat Datang, <?php echo  $_SESSION["user"]["name"] ?></h3>
+        <div class="row">
+            <div class="card mt-4 mr-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://1.bp.blogspot.com/-eZPbA92iz6o/YFlt2V2Ac1I/AAAAAAAAAZA/zOjXVWstT8YYFLhTI4v1nTYbs2tG1LAAwCLcBGAsYHQ/s1057/dr.%2Bcowo.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h1 class="card-title">DATA KESMAS</h1>
+                            <?php
+                            include_once 'config.php';
+                            $sql = "SELECT COUNT(*) FROM tb_kesmas";
+                            $res = $db->query($sql);
+                            $count = $res->fetchColumn();
+
+                            echo "<h1>$count</h1>"; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-4" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://1.bp.blogspot.com/-eZPbA92iz6o/YFlt2V2Ac1I/AAAAAAAAAZA/zOjXVWstT8YYFLhTI4v1nTYbs2tG1LAAwCLcBGAsYHQ/s1057/dr.%2Bcowo.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h1 class="card-title">DATA SDK</h1>
+                            <?php
+                            include_once 'config.php';
+                            $sql = "SELECT COUNT(*) FROM tb_sdk";
+                            $res = $db->query($sql);
+                            $count = $res->fetchColumn();
+
+                            echo "<h1>$count</h1>"; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-4 mr-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://1.bp.blogspot.com/-eZPbA92iz6o/YFlt2V2Ac1I/AAAAAAAAAZA/zOjXVWstT8YYFLhTI4v1nTYbs2tG1LAAwCLcBGAsYHQ/s1057/dr.%2Bcowo.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h1 class="card-title">DATA P3PL</h1>
+                            <?php
+                            include_once 'config.php';
+                            $sql = "SELECT COUNT(*) FROM tb_p3pl";
+                            $res = $db->query($sql);
+                            $count = $res->fetchColumn();
+
+                            echo "<h1>$count</h1>"; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-4" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://1.bp.blogspot.com/-eZPbA92iz6o/YFlt2V2Ac1I/AAAAAAAAAZA/zOjXVWstT8YYFLhTI4v1nTYbs2tG1LAAwCLcBGAsYHQ/s1057/dr.%2Bcowo.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h1 class="card-title">DATA YANKES</h1>
+                            <?php
+                            include_once 'config.php';
+                            $sql = "SELECT COUNT(*) FROM tb_yankes";
+                            $res = $db->query($sql);
+                            $count = $res->fetchColumn();
+
+                            echo "<h1>$count</h1>"; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-4 mr-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://1.bp.blogspot.com/-eZPbA92iz6o/YFlt2V2Ac1I/AAAAAAAAAZA/zOjXVWstT8YYFLhTI4v1nTYbs2tG1LAAwCLcBGAsYHQ/s1057/dr.%2Bcowo.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h1 class="card-title">DATA SEKRETARIAT</h1>
+                            <?php
+                            include_once 'config.php';
+                            $sql = "SELECT COUNT(*) FROM tb_sekretariat";
+                            $res = $db->query($sql);
+                            $count = $res->fetchColumn();
+
+                            echo "<h1>$count</h1>"; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-4" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://1.bp.blogspot.com/-eZPbA92iz6o/YFlt2V2Ac1I/AAAAAAAAAZA/zOjXVWstT8YYFLhTI4v1nTYbs2tG1LAAwCLcBGAsYHQ/s1057/dr.%2Bcowo.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h1 class="card-title">DATA PENGUNJUNG</h1>
+                            <?php
+                            include_once 'config.php';
+                            $sql = "SELECT COUNT(*) FROM users";
+                            $res = $db->query($sql);
+                            $count = $res->fetchColumn();
+
+                            echo "<h1>$count</h1>"; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
 
